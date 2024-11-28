@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carpeta Virtual de Archivos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Carpeta Virtual de Archivos</h1>
+        </header>
+        <main>
+            <section id="folder-view">
+                <div id="weeks-container">
+                    <!-- Weeks will be dynamically added here -->
+                </div>
+            </section>
+            <section id="file-area">
+                <h2 id="current-week">Semana 1</h2>
+                <div id="file-list">
+                    <!-- Files will be dynamically added here -->
+                </div>
+                <div id="file-upload">
+                    <input type="file" id="file-input" multiple accept="image/*">
+                    <button id="upload-btn">Subir Archivos</button>
+                </div>
+            </section>
+        </main>
+        <div id="image-preview" class="hidden">
+            <span id="close-preview">&times;</span>
+            <img id="preview-image" src="" alt="Vista previa">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
